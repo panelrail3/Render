@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: vless-ws-relay-v4-6
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: VLESS_UUID
+        sync: false
